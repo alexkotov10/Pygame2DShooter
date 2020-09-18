@@ -270,14 +270,14 @@ while run == True:
         shoottime = 1 # reset shoottime
         
     # moves left when left arrow pressed
-    if keys[pygame.K_LEFT] and man.x > man.vel:
+    if keys[pygame.K_LEFT] and man.x > man.vel -20 or keys[pygame.K_a] and man.x > man.vel -20:
         man.x-=5
         man.left=True
         man.right=False
         man.standing = False
 
     # moves right when right arrow pressed 
-    elif keys[pygame.K_RIGHT] and man.x < 831:
+    elif keys[pygame.K_RIGHT] and man.x < 831 or keys[pygame.K_d] and man.x < 851:
         man.x+=5
         man.left=False
         man.right=True
@@ -290,7 +290,7 @@ while run == True:
 
     ''' jumps when not in a jump already '''
     if not(man.isJump):
-        if keys[pygame.K_UP]:
+        if keys[pygame.K_UP] or keys[pygame.K_w]:
             jumpSound.play() # plays jump sound
             man.isJump = True
             man.left = False

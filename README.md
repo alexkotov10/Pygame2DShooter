@@ -17,11 +17,14 @@ The game will start and you can immediately start playing.
 
 # Controls
 
-**Movement**
+Movement
+
 Jump - Up Arrow Key or 'W'
 Left - Left Arrow Key or 'A'
 Right - Right Arrow Key or 'D'
-**Shooting**
+
+Shooting
+
 Shoot Bullet - Spacebar
 
 # Notes

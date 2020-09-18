@@ -1,8 +1,31 @@
-# Pygame 2D Shooter Game
+# Pygame2DShooter
 
-A game made in Pygame with simple functions such as jumping, shooting, collisions, animations, moving, healthbars and more.
+Pygame2DShooter is a simple shooting game created in python with actions such as jumping, shooting, walking included.
 
-The version of this program is 1.0.1.
+Pygame Module is needed to run.
 
-To run this file the make sure the images are in the same folder as the .py file"
+**This Version of Pygame2DShooter is 1.0.2.**
+![Demo](https://github.com/alexkotov10/Pygame2DShooter/blob/master/demo.gif)
 
+# Usage
+
+If you would like to use this program, Download the Zip and extract the zip folder.
+
+Immediately from launch, the progam will open a new window called 'Shooter'
+
+The game will start and you can immediately start playing.
+
+# Controls
+
+**Movement**
+Jump - Up Arrow Key or 'W'
+Left - Left Arrow Key or 'A'
+Right - Right Arrow Key or 'D'
+**Shooting**
+Shoot Bullet - Spacebar
+
+# Notes
+
+Any errors should be reported to the github.
+
+Pygame2DShooter can be reused or edited in any way.

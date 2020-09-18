@@ -20,7 +20,9 @@ The game will start and you can immediately start playing.
 Movement
 
 Jump - Up Arrow Key or 'W'
+
 Left - Left Arrow Key or 'A'
+
 Right - Right Arrow Key or 'D'
 
 Shooting

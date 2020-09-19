@@ -1,0 +1,12 @@
+Movement
+
+Jump - Up Arrow Key or 'W'
+
+Left - Left Arrow Key or 'A'
+
+Right - Right Arrow Key or 'D'
+
+
+Shooting
+
+Shoot Bullet - Spacebar

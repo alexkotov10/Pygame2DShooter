@@ -270,7 +270,7 @@ while run == True:
 
     for bullet in bullets: # checks if bullet hits goblin
         if bullet.y - bullet.radius < goblin.hitbox[1] + goblin.hitbox[3] and bullet.y + bullet.radius > goblin.hitbox[1]:
-            if bullet.x + bullet.radius < goblin.hitbox[0] + goblin.hitbox [2] and bullet.x + bullet.radius > goblin.hitbox[0]:
+            if bullet.x + bullet.radius +2 < goblin.hitbox[0] + goblin.hitbox[2] and bullet.x + bullet.radius +26 > goblin.hitbox[0]:
                 if goblin.visible == True: # only hits when visible
                     
                     hitSound.play() # plays hit sound
@@ -303,7 +303,7 @@ while run == True:
         man.standing = False
 
     # moves right when right arrow pressed 
-    elif keys[pygame.K_RIGHT] and man.x < 851 or keys[pygame.K_d] and man.x < 851:
+    elif keys[pygame.K_RIGHT] and man.x < 831 or keys[pygame.K_d] and man.x < 851:
         man.x+=5
         man.left=False
         man.right=True

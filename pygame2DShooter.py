@@ -1,5 +1,31 @@
-# A test game made by Alex Kotov
-# Last Edits 8/23/2020
+########################################################
+
+# Pygame2DShooter is a 2D Shooter game made in python
+# using the module pygame. Currently features such as
+# Jumping, Shooting, Enemies, Healthbars and more
+# Have been added.
+
+# Libraries Used: pygame
+
+# Pygame2DShooter will automatically start upon running
+# The Program.
+
+# Please read Controls.txt for Controls or look at the
+# .md file located in the github.
+
+# The Goal of Pygame2DShooter is to Eliminate the Enemy
+# Using your gun. Bumping into the Enemy will lead to
+# A loss in score.
+
+# please report any issues to the github immediately.
+
+# Pygame2DShooter can be reused or edited in any way.
+
+# Alex Kotov  08/23/2020
+# Last Update 09/18/2020
+
+########################################################
+
 import pygame
 pygame.init()
 
@@ -277,7 +303,7 @@ while run == True:
         man.standing = False
 
     # moves right when right arrow pressed 
-    elif keys[pygame.K_RIGHT] and man.x < 831 or keys[pygame.K_d] and man.x < 851:
+    elif keys[pygame.K_RIGHT] and man.x < 851 or keys[pygame.K_d] and man.x < 851:
         man.x+=5
         man.left=False
         man.right=True

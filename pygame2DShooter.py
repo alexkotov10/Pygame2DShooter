@@ -30,39 +30,39 @@ import pygame
 pygame.init()
 
 # Load Basics such as Program Icon, Program Name, etc
-programIcon = pygame.image.load('resources/icon.png') # loads icon
+programIcon = pygame.image.load('resources/misc/icon.png') # loads icon
 pygame.display.set_icon(programIcon) # changes the icon of the window
 window = pygame.display.set_mode((900,507)) # creates a window with dimensions of the background
 pygame.display.set_caption("Shooter") # renames the window
 
 # loads in the sprites for the character to walk left
-walkRight = [pygame.image.load('resources/R1.png'), pygame.image.load('resources/R2.png'),
-             pygame.image.load('resources/R3.png'), pygame.image.load('resources/R4.png'),
-             pygame.image.load('resources/R5.png'), pygame.image.load('resources/R6.png'),
-             pygame.image.load('resources/R7.png'), pygame.image.load('resources/R8.png'),
-             pygame.image.load('resources/R9.png')]
+walkRight = [pygame.image.load('resources/man/R1.png'), pygame.image.load('resources/man/R2.png'),
+             pygame.image.load('resources/man/R3.png'), pygame.image.load('resources/man/R4.png'),
+             pygame.image.load('resources/man/R5.png'), pygame.image.load('resources/man/R6.png'),
+             pygame.image.load('resources/man/R7.png'), pygame.image.load('resources/man/R8.png'),
+             pygame.image.load('resources/man/R9.png')]
 
 # loads in the sprites for the character to walk right
-walkLeft = [pygame.image.load('resources/L1.png'), pygame.image.load('resources/L2.png'),
-            pygame.image.load('resources/L3.png'), pygame.image.load('resources/L4.png'),
-            pygame.image.load('resources/L5.png'), pygame.image.load('resources/L6.png'),
-            pygame.image.load('resources/L7.png'), pygame.image.load('resources/L8.png'),
-            pygame.image.load('resources/L9.png')]
+walkLeft = [pygame.image.load('resources/man/L1.png'), pygame.image.load('resources/man/L2.png'),
+            pygame.image.load('resources/man/L3.png'), pygame.image.load('resources/man/L4.png'),
+            pygame.image.load('resources/man/L5.png'), pygame.image.load('resources/man/L6.png'),
+            pygame.image.load('resources/man/L7.png'), pygame.image.load('resources/man/L8.png'),
+            pygame.image.load('resources/man/L9.png')]
 
 # Load in Other Sprites
-bg2 = pygame.image.load('resources/bg2.jpg') 
-char = pygame.image.load('resources/standing.png') 
-gun = pygame.image.load('resources/gun.png') 
+bg2 = pygame.image.load('resources/misc/bg2.jpg') 
+char = pygame.image.load('resources/man/standing.png') 
+gun = pygame.image.load('resources/misc/gun.png') 
 
 
 clock = pygame.time.Clock()
 
 # SOUNDS SOUNDS SOUNDS SOUNDS SOUNDS SOUNDS
-bulletSound = pygame.mixer.Sound('resources/bullet.wav') 
-hitSound = pygame.mixer.Sound('resources/hit.wav') 
-explosionSound = pygame.mixer.Sound('resources/explosion.wav') 
-jumpSound = pygame.mixer.Sound('resources/jump.wav') 
-music = pygame.mixer.music.load('resources/music.mp3') 
+bulletSound = pygame.mixer.Sound('resources/audio/bullet.wav') 
+hitSound = pygame.mixer.Sound('resources/audio/hit.wav') 
+explosionSound = pygame.mixer.Sound('resources/audio/explosion.wav') 
+jumpSound = pygame.mixer.Sound('resources/audio/jump.wav') 
+music = pygame.mixer.music.load('resources/audio/music.mp3') 
 pygame.mixer.music.play(-1) 
 # SOUNDS SOUNDS SOUNDS SOUNDS SOUNDS SOUNDS
 
@@ -155,27 +155,27 @@ class projectile(object):
 class enemy(object):
 
         # loads in the sprites needed for the enemy to walk right
-    walkRight = [pygame.image.load('resources/R1E.png'), pygame.image.load('resources/R2E.png'),
-                 pygame.image.load('resources/R3E.png'), pygame.image.load('resources/R4E.png'),
-                 pygame.image.load('resources/R5E.png'), pygame.image.load('resources/R6E.png'),
-                 pygame.image.load('resources/R7E.png'), pygame.image.load('resources/R8E.png'),
-                 pygame.image.load('resources/R9E.png'), pygame.image.load('resources/R10E.png'),
-                 pygame.image.load('resources/R11E.png')]
+    walkRight = [pygame.image.load('resources/enemy/R1E.png'), pygame.image.load('resources/enemy/R2E.png'),
+                 pygame.image.load('resources/enemy/R3E.png'), pygame.image.load('resources/enemy/R4E.png'),
+                 pygame.image.load('resources/enemy/R5E.png'), pygame.image.load('resources/enemy/R6E.png'),
+                 pygame.image.load('resources/enemy/R7E.png'), pygame.image.load('resources/enemy/R8E.png'),
+                 pygame.image.load('resources/enemy/R9E.png'), pygame.image.load('resources/enemy/R10E.png'),
+                 pygame.image.load('resources/enemy/R11E.png')]
 
     # loads in the sprites needed for the enemy to walk left
-    walkLeft = [pygame.image.load('resources/L1E.png'), pygame.image.load('resources/L2E.png'),
-                pygame.image.load('resources/L3E.png'), pygame.image.load('resources/L4E.png'),
-                pygame.image.load('resources/L5E.png'), pygame.image.load('resources/L6E.png'),
-                pygame.image.load('resources/L7E.png'), pygame.image.load('resources/L8E.png'),
-                pygame.image.load('resources/L9E.png'), pygame.image.load('resources/L10E.png'), pygame.image.load('resources/L11E.png')]
+    walkLeft = [pygame.image.load('resources/enemy/L1E.png'), pygame.image.load('resources/enemy/L2E.png'),
+                pygame.image.load('resources/enemy/L3E.png'), pygame.image.load('resources/enemy/L4E.png'),
+                pygame.image.load('resources/enemy/L5E.png'), pygame.image.load('resources/enemy/L6E.png'),
+                pygame.image.load('resources/enemy/L7E.png'), pygame.image.load('resources/enemy/L8E.png'),
+                pygame.image.load('resources/enemy/L9E.png'), pygame.image.load('resources/enemy/L10E.png'), pygame.image.load('resources/enemy/L11E.png')]
 
     # loads in the sprites need for the explosion after the enemy's death
-    explosion = [pygame.image.load('resources/exp1.png'), pygame.image.load('resources/exp2.png'),
-                 pygame.image.load('resources/exp3.png'), pygame.image.load('resources/exp4.png'),
-                 pygame.image.load('resources/exp5.png'), pygame.image.load('resources/exp6.png'),
-                 pygame.image.load('resources/exp7.png'), pygame.image.load('resources/exp8.png'),
-                 pygame.image.load('resources/exp9.png'), pygame.image.load('resources/exp10.png'),
-                 pygame.image.load('resources/exp11.png'), pygame.image.load('resources/exp12.png')]
+    explosion = [pygame.image.load('resources/explosion/exp1.png'), pygame.image.load('resources/explosion/exp2.png'),
+                 pygame.image.load('resources/explosion/exp3.png'), pygame.image.load('resources/explosion/exp4.png'),
+                 pygame.image.load('resources/explosion/exp5.png'), pygame.image.load('resources/explosion/exp6.png'),
+                 pygame.image.load('resources/explosion/exp7.png'), pygame.image.load('resources/explosion/exp8.png'),
+                 pygame.image.load('resources/explosion/exp9.png'), pygame.image.load('resources/explosion/exp10.png'),
+                 pygame.image.load('resources/explosion/exp11.png'), pygame.image.load('resources/explosion/exp12.png')]
     
     
     def __init__(self, x, y, width, height, end):

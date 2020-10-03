@@ -1,0 +1,8 @@
+pygame2DShooter 1.02 Patch Notes.
+- Made the code look more "Beautiful"
+- Moved Resources in one folder
+- Created PatchNotes.txt
+
+pygame2DShooter 1.01 Patch Notes
+- Fixed a bug where a bullet would go through an enemy without hitting.
+- Allowed the use of WAD Keys

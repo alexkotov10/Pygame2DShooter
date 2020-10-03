@@ -6,6 +6,7 @@ Pygame Module is needed to run.
 
 **This Version of Pygame2DShooter is 1.0.2.**
 ![Demo](https://github.com/alexkotov10/Pygame2DShooter/blob/master/demo.gif)
+Created by Alex Kotov
 
 # Usage
 
